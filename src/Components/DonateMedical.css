@@ -1,0 +1,175 @@
+/* DonateMedical.css */
+
+.donate-medical-page {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.donate-medical-main {
+  max-width: 900px;
+  width: 100%;
+}
+
+.donate-medical-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.donate-medical-icon-box {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe6e6;
+  border-radius: 50%;
+}
+
+.donate-medical-heart-icon {
+  width: 30px;
+  height: 30px;
+  color: #ff4d4d;
+}
+
+.donate-medical-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.donate-medical-description {
+  font-size: 16px;
+  color: #555;
+}
+
+.donate-medical-alert-success {
+  display: flex;
+  align-items: center;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.donate-medical-success-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.donate-medical-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.donate-medical-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.donate-medical-input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.donate-medical-field-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.donate-medical-text-input,
+.donate-medical-text-area {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.donate-medical-text-input:focus,
+.donate-medical-text-area:focus {
+  border-color: #3399cc;
+}
+
+.donate-medical-text-area {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.donate-medical-submit-btn {
+  grid-column: span 2;
+  padding: 12px 0;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3399cc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.donate-medical-submit-btn:disabled {
+  background-color: #b0cce0;
+  cursor: not-allowed;
+}
+
+.donate-medical-submit-btn:hover:not(:disabled) {
+  background-color: #287bb5;
+}
+
+.donate-medical-info-panel {
+  margin-top: 30px;
+  background-color: #f1f8ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.donate-medical-info-header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.donate-medical-info-items {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.donate-medical-info-point {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .donate-medical-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-medical-submit-btn {
+    grid-column: span 1;
+  }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

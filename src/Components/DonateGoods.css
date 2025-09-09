@@ -1,0 +1,171 @@
+.donate-goods-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.goods-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.goods-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 250px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.goods-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.goods-card h2 {
+  margin: 15px 0 10px;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.goods-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.goods-card button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.goods-card button:hover {
+  background-color: #ff4c4c;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  animation: fadeIn 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Modal form styling */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* slightly larger spacing for clarity */
+}
+
+/* Inputs and textarea */
+.modal-content input,
+.modal-content textarea {
+  padding: 14px 16px;
+  border-radius: 10px; /* smoother corners */
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Textarea */
+.modal-content textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Focus state for inputs and textarea */
+.modal-content input:focus,
+.modal-content textarea:focus {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 6px rgba(255, 107, 107, 0.3);
+  outline: none;
+}
+
+/* Submit button */
+.modal-content button[type="submit"] {
+  background: linear-gradient(90deg, #ff6b6b, #ff4c4c);
+  border: none;
+  padding: 14px 0;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Submit button hover effect */
+.modal-content button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-btn:hover {
+  color: #333;
+}
