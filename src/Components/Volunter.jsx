@@ -39,7 +39,7 @@ const Volunteer = () => {
   };
 
   const url = isSignup
-    ? "http://localhost:5000/api/volunteer/signup"
+    ? "https://disaster-3hvn.onrender.com/api/volunteer/signup"
     : "https://disaster-3hvn.onrender.com/api/volunteer/login";
 
   try {
