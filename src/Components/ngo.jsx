@@ -22,7 +22,7 @@ const Ngo = () => {
     e.preventDefault();
     const url = isSignup
       ? "http://localhost:5000/api/ngo/register" // ✅ matches backend
-      : "http://localhost:5000/api/ngo/login";
+      : "https://disaster-3hvn.onrender.com/api/ngo/login";
 
     try {
       const res = await fetch(url, {
