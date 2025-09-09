@@ -10,7 +10,8 @@ const PORT=process.env.PORT || 5000;
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://disaster-drab.vercel.app",   // ✅ Your deployed frontend
+  "https://disaster-drab.vercel.app",
+  "https://disaster-coral.vercel.app",   // ✅ Your deployed frontend
   "https://disaster-payal-bhattamisras-projects.vercel.app" // if you still need this one
 ];
 
